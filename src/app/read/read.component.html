@@ -3,7 +3,7 @@
   <ul>
     <li *ngFor="let tutorial of tutorials | async; let i = index">
       <a [href]="tutorial.url" target="_blank">{{ tutorial.name }}</a>
-      <button (click)="delTurorial(i)">Delete</button>
+      <button style="margin-left: 1em;" (click)="delTurorial(i)">Delete</button>
     </li>
   </ul>
 </div>
